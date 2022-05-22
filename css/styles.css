@@ -1,3 +1,37 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+
+
+header nav{
+  background-color: #1eb160;
+}
+nav .navbar-light .yellow{
+  color: white;
+}
+nav.navbar-light li a{
+  color:white
+}
+
+.navbar-nav > li >.dropdown-menu{
+  background-color: #1eb160;
+  color: white;
+}
+.navbar-nav>li>.dropdown-menu a{
+  color: white;
+}
+.navbar-nav > li >.dropdown-menu a:hover{
+  background-color: #ffd800 ;
+  color: black;
+}
+
+nav .navbar-nav li a:hover{
+  background-color: #ffd800;
+}
+.nav-link:hover{
+  color: black !important;
+}
+.navbar{
+  height: 30% !important;
+}
