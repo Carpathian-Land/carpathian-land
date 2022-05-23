@@ -1,3 +1,49 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+
+
+header nav{
+  background-color: #1eb160;
+}
+nav .navbar-light .yellow{
+  color: white;
+}
+nav.navbar-light li a{
+  color:white
+}
+
+.navbar-nav > li >.dropdown-menu{
+  background-color: #1eb160;
+  color: white;
+}
+.navbar-nav>li>.dropdown-menu a{
+  color: white;
+}
+.navbar-nav > li >.dropdown-menu a:hover{
+  background-color: #ffd800 ;
+  color: black;
+}
+
+nav .navbar-nav li a:hover{
+  background-color: #ffd800;
+}
+.nav-link:hover{
+  color: black !important;
+}
+.navbar{
+  height: 30% !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 216, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #ffd800;
+}
+
+.custom-toggler.navbar-toggler:focus {
+  box-shadow: none;
+}
