@@ -234,7 +234,25 @@
             },
             false);
     }
+    ns.getCalculate = function(){
+        let a = document.getElementById("floatingInputM").value;
+        let b = document.getElementById("floatingInputP").value;
+        if(typeof(parseFloat(a)) == "number" && typeof(parseFloat(b)) == "number"){
+            if(a >= 0 && b>= 0){
+                alert(a*b);
+            }else{
+
+            }
+        }
+        else{
+
+        }
+    }
+
+
 
     global.$ns = ns;
+
+
 
 })(window);

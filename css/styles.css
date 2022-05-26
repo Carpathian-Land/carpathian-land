@@ -56,3 +56,28 @@ nav .navbar-nav li a:hover{
   background-color: #ffd800;
   color: black;
 }
+
+
+
+.modal-header{
+  background-color: #1eb160;
+  color: white;
+  border-color: #ffd800;
+}
+.modal-body{
+  background-color: #1eb160;
+  color: black;
+  border-color: #ffd800;
+}
+.modal-footer{
+  background-color: #1eb160;
+  border-color: #ffd800;
+}
+.modal-footer .btn{
+  color: black;
+  background-color: #ffd800;
+}
+.modal-footer .btn:hover{
+  color: black;
+  background-color: #ff9100;
+}
