@@ -2,7 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
 
 header nav{
   background-color: #1eb160;
@@ -29,11 +31,13 @@ nav.navbar-light li a{
 nav .navbar-nav li a:hover{
   background-color: #ffd800;
 }
-.nav-link:hover{
-  color: black !important;
+#collapsable-nav .navbar-nav li a.show{
+  background-color: #ffd800;
+  color: black;
 }
-.navbar{
-  height: 30% !important;
+
+#collapsable-nav .nav-link:hover{
+  color: black;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -46,4 +50,9 @@ nav .navbar-nav li a:hover{
 
 .custom-toggler.navbar-toggler:focus {
   box-shadow: none;
+}
+
+#collapsable-nav .active {
+  background-color: #ffd800;
+  color: black;
 }
