@@ -31,11 +31,13 @@ nav.navbar-light li a{
 nav .navbar-nav li a:hover{
   background-color: #ffd800;
 }
-.nav-link:hover{
-  color: black !important;
+#collapsable-nav .navbar-nav li a.show{
+  background-color: #ffd800;
+  color: black;
 }
-.navbar{
-  height: 30% !important;
+
+#collapsable-nav .nav-link:hover{
+  color: black;
 }
 
 .custom-toggler .navbar-toggler-icon {
