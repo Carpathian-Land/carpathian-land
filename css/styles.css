@@ -2,7 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
 
 header nav{
   background-color: #1eb160;
@@ -46,4 +48,9 @@ nav .navbar-nav li a:hover{
 
 .custom-toggler.navbar-toggler:focus {
   box-shadow: none;
+}
+
+#collapsable-nav .active {
+  background-color: #ffd800;
+  color: black;
 }

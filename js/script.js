@@ -33,20 +33,33 @@
         return string;
     };
 
+    let switchCatalogToActive = function (selectedItem) {
+        removeAllActiveSelectors();
+
+        let classes = document.querySelector("#navbarDropdown").className;
+        classes += " active";
+        document.querySelector("#navbarDropdown").className = classes;
+
+        classes = document.querySelector("#nav" + selectedItem).className;
+        classes += " active";
+        document.querySelector("#nav" + selectedItem).className = classes;
+    };
+
+    let switchAboutUsToActive = function () {
+        removeAllActiveSelectors();
+
+        let classes = document.querySelector("#navAboutUsButton").className;
+        classes += " active";
+        document.querySelector("#navAboutUsButton").className = classes;
+    };
+
+    let removeAllActiveSelectors = function() {
+        document.querySelectorAll(".active").forEach(function (item) {
+            item.className = item.className.replace(new RegExp("active", "g"), "");
+        });
+    };
+
     document.addEventListener("DOMContentLoaded", function (event) {
-
-        const menuToggle = document.getElementById("collapsable-nav");
-        const bsCollapse =  new bootstrap.Collapse(menuToggle, {toggle: false});
-
-        document.querySelector(".navbar-toggler")
-            .addEventListener("blur",
-                function (event) {
-                    let screenWidth = window.innerWidth;
-                    if (screenWidth < 768) {
-                        bsCollapse.toggle();
-                    }
-                })
-
         showLoading("#content");
         $ajaxUtils
             .sendGetRequest(
@@ -68,7 +81,7 @@
                                                     categoriesTitleHtml,
                                                     categoriesHtml
                                                 );
-                                            insertHtml("#content", homeHtmlView );
+                                            insertHtml("#content", homeHtmlView);
                                         },
                                         false);
                                 },
@@ -97,6 +110,7 @@
 
     ns.loadCategoryItems = function (categoryName) {
         showLoading("#content");
+        switchCatalogToActive(categoryName);
         $ajaxUtils.sendGetRequest(
             CATALOG_ITEMS_URL + categoryName + ".json",
             buildAndShowCatalogItemsHTML);
@@ -215,6 +229,7 @@
         $ajaxUtils.sendGetRequest(
             ABOUT_US_HTML,
             function (aboutUsHtml) {
+                switchAboutUsToActive();
                 insertHtml("#content", aboutUsHtml);
             },
             false);

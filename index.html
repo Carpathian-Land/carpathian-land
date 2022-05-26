@@ -27,23 +27,25 @@
         <ul class="navbar-nav text-center">
 
           <li class="nav-item">
-            <a class="nav-link active mx-2" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link mx-2 active" id="navHomeButton" aria-current="page" href="index.html">Home</a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white mx-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Assortment
             </a>
             <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#" onclick="$ns.loadCategoryItems('Bukovel')">Bukovel</a></li>
-              <li><a class="dropdown-item" href="#" onclick="$ns.loadCategoryItems('Yaremche')">Yaremche</a></li>
-              <li><a class="dropdown-item" href="#" onclick="$ns.loadCategoryItems('Ivano-Frankivsk')">Ivano-Frankivsk</a></li>
-              <li><a class="dropdown-item" href="#" onclick="$ns.loadCategoryItems('Vorohta')">Vorohta</a></li>
-              <li><a class="dropdown-item" href="#" onclick="$ns.loadCategoryItems('Polyanytsya')">Polyanytsya</a></li>
+              <li><a class="dropdown-item" id="navBukovel" href="#" onclick="$ns.loadCategoryItems('Bukovel')">Bukovel</a></li>
+              <li><a class="dropdown-item" id="navYaremche" href="#" onclick="$ns.loadCategoryItems('Yaremche')">Yaremche</a></li>
+              <li><a class="dropdown-item" id="navIvano-Frankivsk" href="#" onclick="$ns.loadCategoryItems('Ivano-Frankivsk')">Ivano-Frankivsk</a></li>
+              <li><a class="dropdown-item" id="navVorohta" href="#" onclick="$ns.loadCategoryItems('Vorohta')">Vorohta</a></li>
+              <li><a class="dropdown-item" id="navPolyanytsya" href="#" onclick="$ns.loadCategoryItems('Polyanytsya')">Polyanytsya</a></li>
             </ul>
           </li>
 
-          <li><a class="nav-item nav-link active mx-2" href="#" onclick="$ns.loadAboutUsPage()">About us</a></li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" id="navAboutUsButton" href="#" onclick="$ns.loadAboutUsPage()">About us</a>
+          </li>
         </ul>
       </div>
     </div>
