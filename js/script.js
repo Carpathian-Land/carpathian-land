@@ -35,6 +35,18 @@
 
     document.addEventListener("DOMContentLoaded", function (event) {
 
+        const menuToggle = document.getElementById("collapsable-nav");
+        const bsCollapse =  new bootstrap.Collapse(menuToggle, {toggle: false});
+
+        document.querySelector(".navbar-toggler")
+            .addEventListener("blur",
+                function (event) {
+                    let screenWidth = window.innerWidth;
+                    if (screenWidth < 768) {
+                        bsCollapse.toggle();
+                    }
+                })
+
         showLoading("#content");
         $ajaxUtils
             .sendGetRequest(
