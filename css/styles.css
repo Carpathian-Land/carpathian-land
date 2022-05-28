@@ -83,10 +83,45 @@ nav .navbar-nav li a:hover{
   .google-map {
     height: 100%;
   }
+
+  .bi-pen.custom-pen,
+  .bi-emoji-smile.custom-emoji-smile,
+  .bi-chat-square-text.custom-chat-square {
+    font-size: 75px;
+  }
 }
 
 @media (max-width: 991px) {
   .google-map {
     height: 300px;
   }
+
+  .bi-pen.custom-pen,
+  .bi-emoji-smile.custom-emoji-smile,
+  .bi-chat-square-text.custom-chat-square {
+    font-size: 6.5vw;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .bi-pen.custom-pen,
+  .bi-emoji-smile.custom-emoji-smile,
+  .bi-chat-square-text.custom-chat-square {
+    font-size: 6.25vw;
+  }
+}
+
+/* START HOME PAGE, MAIN CONTENT */
+
+.btn.custom-button {
+  background-color: #1eb160;
+  color: white;
+  width: 100%;
+}
+
+.custom-jumbotron {
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-position: 40%;
 }

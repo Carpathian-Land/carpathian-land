@@ -1,8 +1,12 @@
-<div>
-  <a href="#" onclick="$ns.loadCategoryItems('{{name}}');">
-    <div>
-      <img src="images/catalog/{{name}}/{{name}}.jpg" alt="{{name}}">
-      <span>{{name}}</span>
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="card">
+    <div class="card-body">
+      <a href="#" class="text-decoration-none" onclick="$ns.loadCategoryItems('{{name}}');">
+        <div>
+          <img src="images/catalog/{{name}}/{{name}}.jpg" class="card-img-top" alt="{{name}}">
+          <button class="btn custom-button mt-3">{{name}}</button>
+        </div>
+      </a>
     </div>
-  </a>
+  </div>
 </div>
