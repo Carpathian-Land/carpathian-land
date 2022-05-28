@@ -57,6 +57,9 @@ nav .navbar-nav li a:hover{
   color: black;
 }
 
+.accent-color {
+  color: #1eb160;
+}
 
 /* START ITEM-SNIPPET PAGE */
 
@@ -75,3 +78,15 @@ nav .navbar-nav li a:hover{
 }
 
 /* END ITEM-SNIPPET PAGE */
+
+@media (min-width: 992px) {
+  .google-map {
+    height: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .google-map {
+    height: 300px;
+  }
+}
