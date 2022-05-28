@@ -60,12 +60,12 @@ nav .navbar-nav li a:hover{
 
 /* START ITEM-SNIPPET PAGE */
 
-.breadcrumb span:not(:last-of-type){
+.item-breadcrumb span:not(:last-of-type){
   margin: 0 10px;
   color: #1eb160;
 }
 
-.breadcrumb a{
+.item-breadcrumb a{
   color: #1eb160;
   text-decoration: none;
 }
