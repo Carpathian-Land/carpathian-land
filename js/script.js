@@ -166,7 +166,7 @@
             return insertProperty(html, pricePropName, "");
         }
 
-        priceValue = "$" + priceValue.toFixed(2);
+        priceValue = priceValue.toFixed(2) + " $/are";
         html = insertProperty(html, pricePropName, priceValue);
         return html;
     };
