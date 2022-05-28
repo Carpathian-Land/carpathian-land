@@ -95,7 +95,8 @@
     function buildHomeViewHtml(categories, homeStaticContent, categoriesTitleHtml, categoryHtml) {
         let finalHtml = homeStaticContent;
         finalHtml += categoriesTitleHtml;
-        finalHtml += "<section class='row gy-4'>"
+        finalHtml += "<div class='container'>";
+        finalHtml += "<section class='row gy-4'>";
 
         for (let i = 0; i < categories.length; i++) {
             let html = categoryHtml;
@@ -105,6 +106,7 @@
         }
 
         finalHtml += "</section>";
+        finalHtml += "</div>";
         return finalHtml;
     }
 
