@@ -56,3 +56,22 @@ nav .navbar-nav li a:hover{
   background-color: #ffd800;
   color: black;
 }
+
+
+/* START ITEM-SNIPPET PAGE */
+
+.breadcrumb span:not(:last-of-type){
+  margin: 0 10px;
+  color: #1eb160;
+}
+
+.breadcrumb a{
+  color: #1eb160;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover{
+  text-decoration: underline;
+}
+
+/* END ITEM-SNIPPET PAGE */

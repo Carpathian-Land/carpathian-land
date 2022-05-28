@@ -1,15 +1,27 @@
-<div>
-  <img src="images/catalog/{{categoryShortName}}/{{short_name}}.jpg" alt="{{name}}">
-  <div>{{categoryShortName}}</div>
-  <div>{{name}}</div>
-  <p>{{description}}</p>
-  <div>{{cadastral_number}}</div>
-  <div>{{area_in_are}}</div>
-  <div>{{price_for_are}}</div>
-  <div>
-    <iframe
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://maps.google.com/maps?q={{lat}},{{lon}}&hl=es&z=14&amp;output=embed"
-    ></iframe>
+<!--<div>-->
+<!--  <img src="images/catalog/{{categoryShortName}}/{{short_name}}.jpg" alt="{{name}}">-->
+<!--  <div>{{categoryShortName}}</div>-->
+<!--  <div>{{name}}</div>-->
+<!--  <p>{{description}}</p>-->
+<!--  <div>{{cadastral_number}}</div>-->
+<!--  <div>{{area_in_are}}</div>-->
+<!--  <div>{{price_for_are}}</div>-->
+<!--  <div>-->
+<!--    <iframe-->
+<!--        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"-->
+<!--        src="https://maps.google.com/maps?q={{lat}},{{lon}}&hl=es&z=14&amp;output=embed"-->
+<!--    ></iframe>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="row my-4">
+
+  <div class="breadcrumb">
+    <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+    <span>/</span>
+    <a href="#" onclick="$ns.loadCategoryItems('{{categoryShortName}}')">{{categoryShortName}}</a>
+    <span>/</span>
+    <span>Land plot</span>
   </div>
+
 </div>
