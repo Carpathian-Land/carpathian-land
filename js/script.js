@@ -23,7 +23,7 @@
 
     let showLoading = function (selector) {
         let html = "<div class='text-center'>";
-        html += "<img src='images/ajax-loader.gif' alt='loading' /></div>";
+        html += "<img src='../images/ajax-loader.gif' alt='loading' /></div>";
         insertHtml(selector, html);
     };
 
@@ -95,7 +95,8 @@
     function buildHomeViewHtml(categories, homeStaticContent, categoriesTitleHtml, categoryHtml) {
         let finalHtml = homeStaticContent;
         finalHtml += categoriesTitleHtml;
-        finalHtml += "<section class='row'>"
+        finalHtml += "<div class='container'>";
+        finalHtml += "<section class='row'>";
 
         for (let i = 0; i < categories.length; i++) {
             let html = categoryHtml;
@@ -105,6 +106,7 @@
         }
 
         finalHtml += "</section>";
+        finalHtml += "</div>";
         return finalHtml;
     }
 
@@ -139,6 +141,7 @@
         catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "notes", categoryCatalogItems.category.notes);
 
         let finalHtml = catalogItemsTitleHtml;
+        finalHtml += "<div class='container'>";
         finalHtml += "<section class='row'>";
 
         let catalogItems = categoryCatalogItems.catalog_items;
@@ -157,6 +160,7 @@
         }
 
         finalHtml += "</section>";
+        finalHtml += "</div>";
         return finalHtml;
     }
 
@@ -166,7 +170,7 @@
             return insertProperty(html, pricePropName, "");
         }
 
-        priceValue = "$" + priceValue.toFixed(2);
+        priceValue = priceValue.toFixed(2) + " $/are";
         html = insertProperty(html, pricePropName, priceValue);
         return html;
     };
@@ -208,7 +212,6 @@
 
         for (let i = 0; i < catalogItems.length; i++) {
             if (catalogItems[i].id == itemToDisplayId) {
-                finalHtml += "<section class='row'>";
                 finalHtml = insertProperty(finalHtml, "categoryShortName", categoryShortName);
                 finalHtml = insertProperty(finalHtml, "short_name", catalogItems[i].short_name);
                 finalHtml = insertProperty(finalHtml, "name", catalogItems[i].name);
@@ -218,7 +221,6 @@
                 finalHtml = insertProperty(finalHtml, "lat", catalogItems[i].lat);
                 finalHtml = insertProperty(finalHtml, "lon", catalogItems[i].lon);
                 finalHtml = insertItemPrice(finalHtml, "price_for_are", catalogItems[i].price_for_are);
-                finalHtml += "</section>";
                 return finalHtml;
             }
         }
