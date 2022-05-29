@@ -138,3 +138,17 @@ nav .navbar-nav li a:hover{
 }
 
 /* END HOME PAGE, MAIN CONTENT */
+
+/* START ABOUT US PAGE */
+
+.bi-instagram.custom-instagram,
+.bi-github.custom-github,
+.bi-linkedin.custom-linkedin {
+  font-size: 40px;
+}
+
+.custom-h1 {
+  font-size: 50px;
+}
+
+/* END ABOUT US PAGE */
