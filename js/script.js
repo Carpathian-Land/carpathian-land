@@ -23,7 +23,7 @@
 
     let showLoading = function (selector) {
         let html = "<div class='text-center'>";
-        html += "<img src='../images/ajax-loader.gif' alt='loading' /></div>";
+        html += "<img src='images/ajax-loader.gif' alt='loading' /></div>";
         insertHtml(selector, html);
     };
 
