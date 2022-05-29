@@ -239,13 +239,13 @@
         let b = document.getElementById("floatingInputP").value;
         if(typeof(parseFloat(a)) == "number" && typeof(parseFloat(b)) == "number"){
             if(a >= 0 && b>= 0){
-                alert(a*b);
+                document.getElementById("result").innerText = "Result price: " + a*b;
             }else{
-
+                document.getElementById("result").innerText = "Some of the parameters are not numbers or negative";
             }
         }
         else{
-
+            document.getElementById("result").innerText = "Some of the parameters are not numbers";
         }
     }
 
