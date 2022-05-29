@@ -87,7 +87,7 @@ nav .navbar-nav li a:hover{
   .bi-pen.custom-pen,
   .bi-emoji-smile.custom-emoji-smile,
   .bi-chat-square-text.custom-chat-square {
-    font-size: 75px;
+    font-size: 60px;
   }
 }
 
@@ -114,16 +114,27 @@ nav .navbar-nav li a:hover{
 
 /* START HOME PAGE, MAIN CONTENT */
 
-.btn.custom-button {
-  background-color: #1eb160;
-  color: white;
-  width: 100%;
-}
-
 .custom-jumbotron {
   background-image: url("../images/jumbotron.jpg");
   background-repeat: no-repeat;
   background-position: 40%;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.btn.custom-button {
+  background-color: #1eb160;
+  color: white;
+  width: 100%;
 }
 
 /* END HOME PAGE, MAIN CONTENT */
