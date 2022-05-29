@@ -23,7 +23,7 @@
 
     let showLoading = function (selector) {
         let html = "<div class='text-center'>";
-        html += "<img src='images/ajax-loader.gif' alt='loading' /></div>";
+        html += "<img src='../images/ajax-loader.gif' alt='loading' /></div>";
         insertHtml(selector, html);
     };
 
@@ -96,7 +96,7 @@
         let finalHtml = homeStaticContent;
         finalHtml += categoriesTitleHtml;
         finalHtml += "<div class='container'>";
-        finalHtml += "<section class='row gy-4'>";
+        finalHtml += "<section class='row'>";
 
         for (let i = 0; i < categories.length; i++) {
             let html = categoryHtml;
@@ -141,6 +141,7 @@
         catalogItemsTitleHtml = insertProperty(catalogItemsTitleHtml, "notes", categoryCatalogItems.category.notes);
 
         let finalHtml = catalogItemsTitleHtml;
+        finalHtml += "<div class='container'>";
         finalHtml += "<section class='row'>";
 
         let catalogItems = categoryCatalogItems.catalog_items;
@@ -159,6 +160,7 @@
         }
 
         finalHtml += "</section>";
+        finalHtml += "</div>";
         return finalHtml;
     }
 
